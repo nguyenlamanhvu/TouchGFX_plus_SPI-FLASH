@@ -1052,7 +1052,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0xa5 ./Core/Src/z_flash_W25QXXX.o
  .debug_macro   0x0000000000000000       0xa6 ./Core/Src/z_flash_W25QXXX.o
  .debug_line    0x0000000000000000      0xd45 ./Core/Src/z_flash_W25QXXX.o
- .debug_str     0x0000000000000000    0x8a956 ./Core/Src/z_flash_W25QXXX.o
+ .debug_str     0x0000000000000000    0x8a95a ./Core/Src/z_flash_W25QXXX.o
  .comment       0x0000000000000000       0x44 ./Core/Src/z_flash_W25QXXX.o
  .debug_frame   0x0000000000000000      0x384 ./Core/Src/z_flash_W25QXXX.o
  .ARM.attributes
@@ -12835,106 +12835,106 @@ LOAD D:/ST/STM32CubeIDE_1.13.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_line    0x00000000000221ad     0x2273 ./TouchGFX/target/generated/TouchGFXConfiguration.o
  .debug_line    0x0000000000024420     0x25d0 ./TouchGFX/target/generated/TouchGFXGeneratedHAL.o
 
-.debug_str      0x0000000000000000    0xa6e65
- .debug_str     0x0000000000000000    0x8af1c ./Core/Src/main.o
-                                      0x8b305 (size before relaxing)
- .debug_str     0x000000000008af1c      0x123 ./Core/Src/stm32f4xx_hal_msp.o
-                                      0x8b01f (size before relaxing)
- .debug_str     0x000000000008b03f      0x168 ./Core/Src/stm32f4xx_it.o
-                                      0x8aa26 (size before relaxing)
- .debug_str     0x000000000008b1a7     0x271d ./Core/Src/syscalls.o
+.debug_str      0x0000000000000000    0xa6e69
+ .debug_str     0x0000000000000000    0x8af20 ./Core/Src/main.o
+                                      0x8b309 (size before relaxing)
+ .debug_str     0x000000000008af20      0x123 ./Core/Src/stm32f4xx_hal_msp.o
+                                      0x8b023 (size before relaxing)
+ .debug_str     0x000000000008b043      0x168 ./Core/Src/stm32f4xx_it.o
+                                      0x8aa2a (size before relaxing)
+ .debug_str     0x000000000008b1ab     0x271d ./Core/Src/syscalls.o
                                        0x98a3 (size before relaxing)
- .debug_str     0x000000000008d8c4       0x6b ./Core/Src/sysmem.o
+ .debug_str     0x000000000008d8c8       0x6b ./Core/Src/sysmem.o
                                        0x605a (size before relaxing)
- .debug_str     0x000000000008d92f       0xdb ./Core/Src/system_stm32f4xx.o
+ .debug_str     0x000000000008d933       0xdb ./Core/Src/system_stm32f4xx.o
                                       0x8642e (size before relaxing)
- .debug_str     0x000000000008da0a      0x2a9 ./Core/Src/z_displ_ILI9XXX.o
-                                      0x8ac9f (size before relaxing)
- .debug_str     0x000000000008dcb3      0x22c ./Core/Src/z_touch_XPT2046.o
-                                      0x8ad3e (size before relaxing)
- .debug_str     0x000000000008dedf       0x34 ./Core/Startup/startup_stm32f411ceux.o
+ .debug_str     0x000000000008da0e      0x2a9 ./Core/Src/z_displ_ILI9XXX.o
+                                      0x8aca3 (size before relaxing)
+ .debug_str     0x000000000008dcb7      0x22c ./Core/Src/z_touch_XPT2046.o
+                                      0x8ad42 (size before relaxing)
+ .debug_str     0x000000000008dee3       0x34 ./Core/Startup/startup_stm32f411ceux.o
                                          0x6c (size before relaxing)
- .debug_str     0x000000000008df13      0x5d9 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
+ .debug_str     0x000000000008df17      0x5d9 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
                                       0x86e5a (size before relaxing)
- .debug_str     0x000000000008e4ec      0x2fa ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o
+ .debug_str     0x000000000008e4f0      0x2fa ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o
                                       0x86b7b (size before relaxing)
- .debug_str     0x000000000008e7e6       0x95 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.o
+ .debug_str     0x000000000008e7ea       0x95 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.o
                                       0x8644a (size before relaxing)
- .debug_str     0x000000000008e87b      0x2db ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o
+ .debug_str     0x000000000008e87f      0x2db ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o
                                       0x86836 (size before relaxing)
- .debug_str     0x000000000008eb56       0xd2 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o
+ .debug_str     0x000000000008eb5a       0xd2 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o
                                       0x865a9 (size before relaxing)
- .debug_str     0x000000000008ec28      0x228 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o
+ .debug_str     0x000000000008ec2c      0x228 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o
                                       0x86862 (size before relaxing)
- .debug_str     0x000000000008ee50      0x4f1 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.o
+ .debug_str     0x000000000008ee54      0x4f1 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.o
                                       0x86ce0 (size before relaxing)
- .debug_str     0x000000000008f341      0xcf1 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o
+ .debug_str     0x000000000008f345      0xcf1 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o
                                       0x87796 (size before relaxing)
- .debug_str     0x0000000000090032      0x493 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o
+ .debug_str     0x0000000000090036      0x493 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o
                                       0x86fb2 (size before relaxing)
- .debug_str     0x00000000000904c5       0x4b ./TouchGFX/App/app_touchgfx.o
+ .debug_str     0x00000000000904c9       0x4b ./TouchGFX/App/app_touchgfx.o
                                        0x2e38 (size before relaxing)
- .debug_str     0x0000000000090510     0x2059 ./TouchGFX/generated/fonts/src/ApplicationFontProvider.o
+ .debug_str     0x0000000000090514     0x2059 ./TouchGFX/generated/fonts/src/ApplicationFontProvider.o
                                        0x605e (size before relaxing)
- .debug_str     0x0000000000092569     0x12d2 ./TouchGFX/generated/fonts/src/CachedFont.o
+ .debug_str     0x000000000009256d     0x12d2 ./TouchGFX/generated/fonts/src/CachedFont.o
                                        0x70dc (size before relaxing)
- .debug_str     0x000000000009383b       0x56 ./TouchGFX/generated/fonts/src/Font_verdana_10_4bpp_0.o
+ .debug_str     0x000000000009383f       0x56 ./TouchGFX/generated/fonts/src/Font_verdana_10_4bpp_0.o
                                        0x4d03 (size before relaxing)
- .debug_str     0x0000000000093891       0x56 ./TouchGFX/generated/fonts/src/Font_verdana_20_4bpp_0.o
+ .debug_str     0x0000000000093895       0x56 ./TouchGFX/generated/fonts/src/Font_verdana_20_4bpp_0.o
                                        0x4d03 (size before relaxing)
- .debug_str     0x00000000000938e7       0x56 ./TouchGFX/generated/fonts/src/Font_verdana_40_4bpp_0.o
+ .debug_str     0x00000000000938eb       0x56 ./TouchGFX/generated/fonts/src/Font_verdana_40_4bpp_0.o
                                        0x4d03 (size before relaxing)
- .debug_str     0x000000000009393d      0x2c1 ./TouchGFX/generated/fonts/src/GeneratedFont.o
+ .debug_str     0x0000000000093941      0x2c1 ./TouchGFX/generated/fonts/src/GeneratedFont.o
                                        0x648d (size before relaxing)
- .debug_str     0x0000000000093bfe       0x54 ./TouchGFX/generated/fonts/src/Kerning_verdana_10_4bpp.o
+ .debug_str     0x0000000000093c02       0x54 ./TouchGFX/generated/fonts/src/Kerning_verdana_10_4bpp.o
                                        0x5436 (size before relaxing)
- .debug_str     0x0000000000093c52       0x54 ./TouchGFX/generated/fonts/src/Kerning_verdana_20_4bpp.o
+ .debug_str     0x0000000000093c56       0x54 ./TouchGFX/generated/fonts/src/Kerning_verdana_20_4bpp.o
                                        0x5436 (size before relaxing)
- .debug_str     0x0000000000093ca6       0x54 ./TouchGFX/generated/fonts/src/Kerning_verdana_40_4bpp.o
+ .debug_str     0x0000000000093caa       0x54 ./TouchGFX/generated/fonts/src/Kerning_verdana_40_4bpp.o
                                        0x5436 (size before relaxing)
- .debug_str     0x0000000000093cfa      0x144 ./TouchGFX/generated/fonts/src/Table_verdana_10_4bpp.o
+ .debug_str     0x0000000000093cfe      0x144 ./TouchGFX/generated/fonts/src/Table_verdana_10_4bpp.o
                                        0x6340 (size before relaxing)
- .debug_str     0x0000000000093e3e       0x9f ./TouchGFX/generated/fonts/src/Table_verdana_20_4bpp.o
+ .debug_str     0x0000000000093e42       0x9f ./TouchGFX/generated/fonts/src/Table_verdana_20_4bpp.o
                                        0x6340 (size before relaxing)
- .debug_str     0x0000000000093edd       0x9f ./TouchGFX/generated/fonts/src/Table_verdana_40_4bpp.o
+ .debug_str     0x0000000000093ee1       0x9f ./TouchGFX/generated/fonts/src/Table_verdana_40_4bpp.o
                                        0x6340 (size before relaxing)
- .debug_str     0x0000000000093f7c     0xf812 ./TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o
+ .debug_str     0x0000000000093f80     0xf812 ./TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.o
                                       0x17f7f (size before relaxing)
- .debug_str     0x00000000000a378e      0xb38 ./TouchGFX/generated/gui_generated/src/main_screen/MainViewBase.o
+ .debug_str     0x00000000000a3792      0xb38 ./TouchGFX/generated/gui_generated/src/main_screen/MainViewBase.o
                                        0xfb68 (size before relaxing)
- .debug_str     0x00000000000a42c6       0xbb ./TouchGFX/generated/images/src/BitmapDatabase.o
+ .debug_str     0x00000000000a42ca       0xbb ./TouchGFX/generated/images/src/BitmapDatabase.o
                                        0x5e7c (size before relaxing)
- .debug_str     0x00000000000a4381       0x31 ./TouchGFX/generated/images/src/image_HCMUT.o
+ .debug_str     0x00000000000a4385       0x31 ./TouchGFX/generated/images/src/image_HCMUT.o
                                        0x3798 (size before relaxing)
- .debug_str     0x00000000000a43b2       0x36 ./TouchGFX/generated/images/src/image_background.o
+ .debug_str     0x00000000000a43b6       0x36 ./TouchGFX/generated/images/src/image_background.o
                                        0x37a2 (size before relaxing)
- .debug_str     0x00000000000a43e8       0x39 ./TouchGFX/generated/texts/src/LanguageGb.o
+ .debug_str     0x00000000000a43ec       0x39 ./TouchGFX/generated/texts/src/LanguageGb.o
                                        0x4e3f (size before relaxing)
- .debug_str     0x00000000000a4421      0x210 ./TouchGFX/generated/texts/src/Texts.o
+ .debug_str     0x00000000000a4425      0x210 ./TouchGFX/generated/texts/src/Texts.o
                                        0xdb25 (size before relaxing)
- .debug_str     0x00000000000a4631      0x139 ./TouchGFX/generated/texts/src/TypedTextDatabase.o
+ .debug_str     0x00000000000a4635      0x139 ./TouchGFX/generated/texts/src/TypedTextDatabase.o
                                        0x66ae (size before relaxing)
- .debug_str     0x00000000000a476a       0x9f ./TouchGFX/gui/src/common/FrontendApplication.o
+ .debug_str     0x00000000000a476e       0x9f ./TouchGFX/gui/src/common/FrontendApplication.o
                                        0xdce9 (size before relaxing)
- .debug_str     0x00000000000a4809      0x116 ./TouchGFX/gui/src/main_screen/MainPresenter.o
+ .debug_str     0x00000000000a480d      0x116 ./TouchGFX/gui/src/main_screen/MainPresenter.o
                                        0xf1a4 (size before relaxing)
- .debug_str     0x00000000000a491f       0x60 ./TouchGFX/gui/src/main_screen/MainView.o
+ .debug_str     0x00000000000a4923       0x60 ./TouchGFX/gui/src/main_screen/MainView.o
                                        0xf11a (size before relaxing)
- .debug_str     0x00000000000a497f       0x32 ./TouchGFX/gui/src/model/Model.o
+ .debug_str     0x00000000000a4983       0x32 ./TouchGFX/gui/src/model/Model.o
                                        0x332c (size before relaxing)
- .debug_str     0x00000000000a49b1      0x166 ./TouchGFX/target/STM32TouchController.o
+ .debug_str     0x00000000000a49b5      0x166 ./TouchGFX/target/STM32TouchController.o
                                        0x4f37 (size before relaxing)
- .debug_str     0x00000000000a4b17      0x143 ./TouchGFX/target/TouchGFXGPIO.o
-                                      0x8a808 (size before relaxing)
- .debug_str     0x00000000000a4c5a      0x814 ./TouchGFX/target/TouchGFXHAL.o
+ .debug_str     0x00000000000a4b1b      0x143 ./TouchGFX/target/TouchGFXGPIO.o
+                                      0x8a80c (size before relaxing)
+ .debug_str     0x00000000000a4c5e      0x814 ./TouchGFX/target/TouchGFXHAL.o
                                       0x11acb (size before relaxing)
- .debug_str     0x00000000000a546e      0x38d ./TouchGFX/target/generated/OSWrappers.o
+ .debug_str     0x00000000000a5472      0x38d ./TouchGFX/target/generated/OSWrappers.o
                                       0x938dc (size before relaxing)
- .debug_str     0x00000000000a57fb      0x3f5 ./TouchGFX/target/generated/STM32DMA.o
+ .debug_str     0x00000000000a57ff      0x3f5 ./TouchGFX/target/generated/STM32DMA.o
                                        0x9b47 (size before relaxing)
- .debug_str     0x00000000000a5bf0      0x981 ./TouchGFX/target/generated/TouchGFXConfiguration.o
+ .debug_str     0x00000000000a5bf4      0x981 ./TouchGFX/target/generated/TouchGFXConfiguration.o
                                       0x9a942 (size before relaxing)
- .debug_str     0x00000000000a6571      0x8f4 ./TouchGFX/target/generated/TouchGFXGeneratedHAL.o
+ .debug_str     0x00000000000a6575      0x8f4 ./TouchGFX/target/generated/TouchGFXGeneratedHAL.o
                                       0x96ef1 (size before relaxing)
 
 .debug_frame    0x0000000000000000     0x97fc

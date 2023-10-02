@@ -59,10 +59,10 @@
 #define EXT_FLASH_PAGE_SIZE		0x0100		//256b 		page size (bits)
 #define EXT_FLASH_SECTOR_SIZE	0x1000		//4kB 		sector size (bytes)
 #define EXT_FLASH_BLOCK_SIZE	0x00010000	//64kB 		block size (bytes)
-#define EXT_FLASH_SIZE			0X00100000	//1MB-8Mb	total size (bytes)
-#define EXT_FLASH_PAGE_NUM		0x1000		//4096 		pages
-#define EXT_FLASH_SECTOR_NUM	0x0100		//256 		sectors
-#define EXT_FLASH_BLOCK_NUM		0x0010		//16 		blocks
+#define EXT_FLASH_SIZE			0X01000000	//16MB-128Mb	total size (bytes)
+#define EXT_FLASH_PAGE_NUM		0x00010000	//32768		pages
+#define EXT_FLASH_SECTOR_NUM	0x1000		//4096 		sectors
+#define EXT_FLASH_BLOCK_NUM		0x0100		//256		blocks
 
 
 /* here values for the W25Q80DV/DL chips
