@@ -5,16 +5,16 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../TouchGFX/generated/images/src/__generated/image_alternate_theme_images_widgets_gauge_medium_backgrounds_active.cpp \
-../TouchGFX/generated/images/src/__generated/image_alternate_theme_images_widgets_gauge_medium_needles_smooth.cpp 
+../TouchGFX/generated/images/src/__generated/image_alternate_theme_images_widgets_button_regular_height_36_small_round_active.cpp \
+../TouchGFX/generated/images/src/__generated/image_alternate_theme_images_widgets_button_regular_height_36_small_round_pressed.cpp 
 
 OBJS += \
-./TouchGFX/generated/images/src/__generated/image_alternate_theme_images_widgets_gauge_medium_backgrounds_active.o \
-./TouchGFX/generated/images/src/__generated/image_alternate_theme_images_widgets_gauge_medium_needles_smooth.o 
+./TouchGFX/generated/images/src/__generated/image_alternate_theme_images_widgets_button_regular_height_36_small_round_active.o \
+./TouchGFX/generated/images/src/__generated/image_alternate_theme_images_widgets_button_regular_height_36_small_round_pressed.o 
 
 CPP_DEPS += \
-./TouchGFX/generated/images/src/__generated/image_alternate_theme_images_widgets_gauge_medium_backgrounds_active.d \
-./TouchGFX/generated/images/src/__generated/image_alternate_theme_images_widgets_gauge_medium_needles_smooth.d 
+./TouchGFX/generated/images/src/__generated/image_alternate_theme_images_widgets_button_regular_height_36_small_round_active.d \
+./TouchGFX/generated/images/src/__generated/image_alternate_theme_images_widgets_button_regular_height_36_small_round_pressed.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -24,7 +24,7 @@ TouchGFX/generated/images/src/__generated/%.o TouchGFX/generated/images/src/__ge
 clean: clean-TouchGFX-2f-generated-2f-images-2f-src-2f-__generated
 
 clean-TouchGFX-2f-generated-2f-images-2f-src-2f-__generated:
-	-$(RM) ./TouchGFX/generated/images/src/__generated/image_alternate_theme_images_widgets_gauge_medium_backgrounds_active.cyclo ./TouchGFX/generated/images/src/__generated/image_alternate_theme_images_widgets_gauge_medium_backgrounds_active.d ./TouchGFX/generated/images/src/__generated/image_alternate_theme_images_widgets_gauge_medium_backgrounds_active.o ./TouchGFX/generated/images/src/__generated/image_alternate_theme_images_widgets_gauge_medium_backgrounds_active.su ./TouchGFX/generated/images/src/__generated/image_alternate_theme_images_widgets_gauge_medium_needles_smooth.cyclo ./TouchGFX/generated/images/src/__generated/image_alternate_theme_images_widgets_gauge_medium_needles_smooth.d ./TouchGFX/generated/images/src/__generated/image_alternate_theme_images_widgets_gauge_medium_needles_smooth.o ./TouchGFX/generated/images/src/__generated/image_alternate_theme_images_widgets_gauge_medium_needles_smooth.su
+	-$(RM) ./TouchGFX/generated/images/src/__generated/image_alternate_theme_images_widgets_button_regular_height_36_small_round_active.cyclo ./TouchGFX/generated/images/src/__generated/image_alternate_theme_images_widgets_button_regular_height_36_small_round_active.d ./TouchGFX/generated/images/src/__generated/image_alternate_theme_images_widgets_button_regular_height_36_small_round_active.o ./TouchGFX/generated/images/src/__generated/image_alternate_theme_images_widgets_button_regular_height_36_small_round_active.su ./TouchGFX/generated/images/src/__generated/image_alternate_theme_images_widgets_button_regular_height_36_small_round_pressed.cyclo ./TouchGFX/generated/images/src/__generated/image_alternate_theme_images_widgets_button_regular_height_36_small_round_pressed.d ./TouchGFX/generated/images/src/__generated/image_alternate_theme_images_widgets_button_regular_height_36_small_round_pressed.o ./TouchGFX/generated/images/src/__generated/image_alternate_theme_images_widgets_button_regular_height_36_small_round_pressed.su
 
 .PHONY: clean-TouchGFX-2f-generated-2f-images-2f-src-2f-__generated
 

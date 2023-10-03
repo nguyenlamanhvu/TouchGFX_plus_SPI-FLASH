@@ -8,9 +8,22 @@
 #include <texts/TextKeysAndLanguages.hpp>
 #include <touchgfx/Texts.hpp>
 #include <touchgfx/hal/HAL.hpp>
+#ifndef SIMULATOR
+#include <platform/driver/lcd/LCD16bppSerialFlash.hpp>
+#endif
+#ifdef SIMULATOR
 #include <platform/driver/lcd/LCD16bpp.hpp>
+#endif
 #include <gui/main_screen/MainView.hpp>
 #include <gui/main_screen/MainPresenter.hpp>
+#include <gui/rtc_screen_screen/RTC_ScreenView.hpp>
+#include <gui/rtc_screen_screen/RTC_ScreenPresenter.hpp>
+#include <gui/temperature_screen_screen/Temperature_ScreenView.hpp>
+#include <gui/temperature_screen_screen/Temperature_ScreenPresenter.hpp>
+#include <gui/pressure_screen_screen/Pressure_ScreenView.hpp>
+#include <gui/pressure_screen_screen/Pressure_ScreenPresenter.hpp>
+#include <gui/co_screen_screen/CO_ScreenView.hpp>
+#include <gui/co_screen_screen/CO_ScreenPresenter.hpp>
 
 using namespace touchgfx;
 
@@ -21,8 +34,15 @@ FrontendApplicationBase::FrontendApplicationBase(Model& m, FrontendHeap& heap)
       model(m)
 {
     touchgfx::HAL::getInstance()->setDisplayOrientation(touchgfx::ORIENTATION_LANDSCAPE);
+    touchgfx::Texts::setLanguage(GB);
+#ifndef SIMULATOR
+    reinterpret_cast<touchgfx::LCD16bppSerialFlash&>(touchgfx::HAL::lcd()).enableTextureMapperAll();
+    reinterpret_cast<touchgfx::LCD16bppSerialFlash&>(touchgfx::HAL::lcd()).enableDecompressorL8_All();
+#endif
+#ifdef SIMULATOR
     reinterpret_cast<touchgfx::LCD16bpp&>(touchgfx::HAL::lcd()).enableTextureMapperAll();
     reinterpret_cast<touchgfx::LCD16bpp&>(touchgfx::HAL::lcd()).enableDecompressorL8_All();
+#endif
 }
 
 /*
@@ -40,4 +60,67 @@ void FrontendApplicationBase::gotoMainScreenNoTransition()
 void FrontendApplicationBase::gotoMainScreenNoTransitionImpl()
 {
     touchgfx::makeTransition<MainView, MainPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+void FrontendApplicationBase::gotoMainScreenSlideTransitionWest()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoMainScreenSlideTransitionWestImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoMainScreenSlideTransitionWestImpl()
+{
+    touchgfx::makeTransition<MainView, MainPresenter, touchgfx::SlideTransition<WEST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// RTC_Screen
+
+void FrontendApplicationBase::gotoRTC_ScreenScreenSlideTransitionEast()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoRTC_ScreenScreenSlideTransitionEastImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoRTC_ScreenScreenSlideTransitionEastImpl()
+{
+    touchgfx::makeTransition<RTC_ScreenView, RTC_ScreenPresenter, touchgfx::SlideTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// Temperature_Screen
+
+void FrontendApplicationBase::gotoTemperature_ScreenScreenSlideTransitionEast()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoTemperature_ScreenScreenSlideTransitionEastImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoTemperature_ScreenScreenSlideTransitionEastImpl()
+{
+    touchgfx::makeTransition<Temperature_ScreenView, Temperature_ScreenPresenter, touchgfx::SlideTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// Pressure_Screen
+
+void FrontendApplicationBase::gotoPressure_ScreenScreenSlideTransitionEast()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoPressure_ScreenScreenSlideTransitionEastImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoPressure_ScreenScreenSlideTransitionEastImpl()
+{
+    touchgfx::makeTransition<Pressure_ScreenView, Pressure_ScreenPresenter, touchgfx::SlideTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// CO_Screen
+
+void FrontendApplicationBase::gotoCO_ScreenScreenSlideTransitionEast()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoCO_ScreenScreenSlideTransitionEastImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoCO_ScreenScreenSlideTransitionEastImpl()
+{
+    touchgfx::makeTransition<CO_ScreenView, CO_ScreenPresenter, touchgfx::SlideTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }

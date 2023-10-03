@@ -24,7 +24,8 @@ TouchGFX/target/TouchGFXHAL.o: ../TouchGFX/target/TouchGFXHAL.cpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/Unicode.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/TextProvider.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/TextureMapTypes.hpp \
- ../Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/DebugPrinter.hpp
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/DebugPrinter.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/FlashDataReader.hpp
 ../TouchGFX/target/TouchGFXHAL.hpp:
 ../TouchGFX/target/generated/TouchGFXGeneratedHAL.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/HAL.hpp:
@@ -51,3 +52,4 @@ TouchGFX/target/TouchGFXHAL.o: ../TouchGFX/target/TouchGFXHAL.cpp \
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/TextProvider.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/TextureMapTypes.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/DebugPrinter.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/FlashDataReader.hpp:

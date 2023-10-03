@@ -10,5 +10,25 @@ KEEP extern const uint32_t indicesGb[] TEXT_LOCATION_FLASH_ATTRIBUTE;
 // Remap all strings
 TEXT_LOCATION_FLASH_PRAGMA
 KEEP extern const uint32_t indicesGb[] TEXT_LOCATION_FLASH_ATTRIBUTE = {
-    0
+    71, // T___SINGLEUSE_X5R4: "<>"
+    71, // T___SINGLEUSE_WMEQ: "<>"
+    71, // T___SINGLEUSE_Y02B: "<>"
+    71, // T___SINGLEUSE_PQAP: "<>"
+    71, // T___SINGLEUSE_M75E: "<>"
+    71, // T___SINGLEUSE_JXCB: "<>"
+    54, // T___SINGLEUSE_R7OK: "Return"
+    35, // T___SINGLEUSE_L83Z: "CO Screen"
+    45, // T___SINGLEUSE_Q5WP: "Pressure"
+    54, // T___SINGLEUSE_Q180: "Return"
+    12, // T___SINGLEUSE_SJMZ: "Temperature"
+    54, // T___SINGLEUSE_9LCS: "Return"
+    54, // T___SINGLEUSE_T0EE: "Return"
+    61, // T___SINGLEUSE_H8HR: "Time:"
+    71, // T___SINGLEUSE_L956: "<>"
+    24, // T___SINGLEUSE_LXH9: "RTC Screen"
+    45, // T___SINGLEUSE_9FPZ: "Pressure"
+    12, // T___SINGLEUSE_5XO7: "Temperature"
+    35, // T___SINGLEUSE_5A2F: "CO Screen"
+    0,  // T___SINGLEUSE_Z9NE: "CAR SYSTEMS"
+    67  // T___SINGLEUSE_OKXZ: "RTC"
 };

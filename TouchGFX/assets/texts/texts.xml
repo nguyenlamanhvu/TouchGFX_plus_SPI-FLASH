@@ -5,10 +5,75 @@
   </Languages>
   <Texts>
     <TextGroup Id="Group1" />
+    <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_X5R4" Alignment="Left" TypographyId="Small">
+        <Translation Language="GB">&lt;&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_WMEQ" Alignment="Left" TypographyId="Small">
+        <Translation Language="GB">&lt;&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_Y02B" Alignment="Left" TypographyId="Small">
+        <Translation Language="GB">&lt;&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_PQAP" Alignment="Left" TypographyId="Small">
+        <Translation Language="GB">&lt;&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_M75E" Alignment="Left" TypographyId="Small">
+        <Translation Language="GB">&lt;&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_JXCB" Alignment="Left" TypographyId="Small">
+        <Translation Language="GB">&lt;&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_R7OK" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Return</Translation>
+      </Text>
+      <Text Id="__SingleUse_L83Z" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">CO Screen</Translation>
+      </Text>
+      <Text Id="__SingleUse_Q5WP" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Pressure</Translation>
+      </Text>
+      <Text Id="__SingleUse_Q180" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Return</Translation>
+      </Text>
+      <Text Id="__SingleUse_SJMZ" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Temperature</Translation>
+      </Text>
+      <Text Id="__SingleUse_9LCS" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Return</Translation>
+      </Text>
+      <Text Id="__SingleUse_T0EE" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Return</Translation>
+      </Text>
+      <Text Id="__SingleUse_H8HR" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Time:</Translation>
+      </Text>
+      <Text Id="__SingleUse_L956" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">&lt;&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_LXH9" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">RTC Screen</Translation>
+      </Text>
+      <Text Id="__SingleUse_9FPZ" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">Pressure</Translation>
+      </Text>
+      <Text Id="__SingleUse_5XO7" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">Temperature</Translation>
+      </Text>
+      <Text Id="__SingleUse_5A2F" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">CO Screen</Translation>
+      </Text>
+      <Text Id="__SingleUse_Z9NE" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">CAR SYSTEMS</Translation>
+      </Text>
+      <Text Id="__SingleUse_OKXZ" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">RTC</Translation>
+      </Text>
+    </TextGroup>
   </Texts>
   <Typographies>
-    <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" Direction="LTR" FallbackCharacter="?" />
-    <Typography Id="Large" Font="verdana.ttf" Size="40" Bpp="4" Direction="LTR" FallbackCharacter="?" />
-    <Typography Id="Small" Font="verdana.ttf" Size="10" Bpp="4" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Default" Font="verdana.ttf" Size="32" Bpp="4" Direction="LTR" FallbackCharacter="?" WidgetWildcardCharacters="0123456789 :APM" />
+    <Typography Id="Large" Font="verdana.ttf" Size="24" Bpp="4" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Small" Font="verdana.ttf" Size="10" Bpp="4" Direction="LTR" FallbackCharacter="?" WidgetWildcardCharacters="-., 0123456789" />
   </Typographies>
 </TextDatabase>

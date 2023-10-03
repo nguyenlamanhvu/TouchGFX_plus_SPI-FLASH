@@ -184,6 +184,54 @@
     <Filter Include="Header Files\generated\simulator\include\simulator\video">
       <UniqueIdentifier>FFE03DFE-3200-1095-F516-11E38D7F6607</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\gui\rtc_screen_screen">
+      <UniqueIdentifier>D93871A3-CB9C-8FDD-6EBA-CF9B66A6ABD2</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\rtc_screen_screen">
+      <UniqueIdentifier>21E79524-317E-B5EE-5F8F-83F81E2130A3</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\rtc_screen_screen">
+      <UniqueIdentifier>21E9940A-7587-A8E1-75A7-44D780445FD3</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\rtc_screen_screen">
+      <UniqueIdentifier>57E3386F-A85F-D54A-7E9B-BB557A946AD9</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\temperature_screen_screen">
+      <UniqueIdentifier>2B6792E2-E6FF-BC17-5A9E-486B20E07F97</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\temperature_screen_screen">
+      <UniqueIdentifier>ACC7750C-1667-864F-28E9-A00145E0BC62</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\temperature_screen_screen">
+      <UniqueIdentifier>F6A76FB2-8F48-5FA6-390D-7CD53F29F2F0</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\temperature_screen_screen">
+      <UniqueIdentifier>136E1A2E-A614-E3D8-8333-E6CD16DD9A5E</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\pressure_screen_screen">
+      <UniqueIdentifier>699C441A-0AF7-CDF6-4C33-8FAB507202A6</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\pressure_screen_screen">
+      <UniqueIdentifier>1C56E67E-E836-3777-84FE-8C2F3A5CDDEB</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\pressure_screen_screen">
+      <UniqueIdentifier>607BF86C-6539-1F22-F087-063F09D1F39B</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\pressure_screen_screen">
+      <UniqueIdentifier>B48C6C91-ACBF-E01D-54B1-902B875C85BC</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui\co_screen_screen">
+      <UniqueIdentifier>C1BB7BE8-B6BB-1848-8276-AC2FE60DA63E</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\co_screen_screen">
+      <UniqueIdentifier>9151DF7F-478C-C8BD-C49C-4F0BBFF536EE</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\co_screen_screen">
+      <UniqueIdentifier>2F281ADF-86F9-CB89-52EC-C2C897C24E03</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\co_screen_screen">
+      <UniqueIdentifier>59842E99-EEE9-315F-97D6-3669F760E773</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(TouchGFXReleasePath)\framework\source\platform\driver\touch\SDL2TouchController.cpp">
@@ -224,6 +272,42 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\simulator\src\video\SoftwareMJPEGDecoder.cpp">
       <Filter>Source Files\generated\simulator\video</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\rtc_screen_screen\RTC_ScreenPresenter.cpp">
+      <Filter>Source Files\gui\rtc_screen_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\rtc_screen_screen\RTC_ScreenView.cpp">
+      <Filter>Source Files\gui\rtc_screen_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\rtc_screen_screen\RTC_ScreenViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\rtc_screen_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\temperature_screen_screen\Temperature_ScreenPresenter.cpp">
+      <Filter>Source Files\gui\temperature_screen_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\temperature_screen_screen\Temperature_ScreenView.cpp">
+      <Filter>Source Files\gui\temperature_screen_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\temperature_screen_screen\Temperature_ScreenViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\temperature_screen_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\pressure_screen_screen\Pressure_ScreenPresenter.cpp">
+      <Filter>Source Files\gui\pressure_screen_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\pressure_screen_screen\Pressure_ScreenView.cpp">
+      <Filter>Source Files\gui\pressure_screen_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\pressure_screen_screen\Pressure_ScreenViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\pressure_screen_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\co_screen_screen\CO_ScreenPresenter.cpp">
+      <Filter>Source Files\gui\co_screen_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\co_screen_screen\CO_ScreenView.cpp">
+      <Filter>Source Files\gui\co_screen_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\co_screen_screen\CO_ScreenViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\co_screen_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -675,6 +759,42 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\simulator\include\simulator\video\SoftwareMJPEGDecoder.hpp">
       <Filter>Header Files\generated\simulator\include\simulator\video</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\rtc_screen_screen\RTC_ScreenPresenter.hpp">
+      <Filter>Header Files\gui\rtc_screen_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\rtc_screen_screen\RTC_ScreenView.hpp">
+      <Filter>Header Files\gui\rtc_screen_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\rtc_screen_screen\RTC_ScreenViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\rtc_screen_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\temperature_screen_screen\Temperature_ScreenPresenter.hpp">
+      <Filter>Header Files\gui\temperature_screen_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\temperature_screen_screen\Temperature_ScreenView.hpp">
+      <Filter>Header Files\gui\temperature_screen_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\temperature_screen_screen\Temperature_ScreenViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\temperature_screen_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\pressure_screen_screen\Pressure_ScreenPresenter.hpp">
+      <Filter>Header Files\gui\pressure_screen_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\pressure_screen_screen\Pressure_ScreenView.hpp">
+      <Filter>Header Files\gui\pressure_screen_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\pressure_screen_screen\Pressure_ScreenViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\pressure_screen_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\co_screen_screen\CO_ScreenPresenter.hpp">
+      <Filter>Header Files\gui\co_screen_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\co_screen_screen\CO_ScreenView.hpp">
+      <Filter>Header Files\gui\co_screen_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\co_screen_screen\CO_ScreenViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\co_screen_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

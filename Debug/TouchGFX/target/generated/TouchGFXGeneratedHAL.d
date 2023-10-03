@@ -25,6 +25,7 @@ TouchGFX/target/generated/TouchGFXGeneratedHAL.o: \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/TextProvider.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/TextureMapTypes.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/DebugPrinter.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/FlashDataReader.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/OSWrappers.hpp \
  ../TouchGFX/gui/include/gui/common/FrontendHeap.hpp \
  ../TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendHeapBase.hpp \
@@ -38,6 +39,9 @@ TouchGFX/target/generated/TouchGFXGeneratedHAL.o: \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/Container.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/SlideTransition.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/SnapshotWidget.hpp \
  ../TouchGFX/gui/include/gui/common/FrontendApplication.hpp \
  ../TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp \
  ../Middlewares/ST/touchgfx/framework/include/mvp/MVPApplication.hpp \
@@ -73,6 +77,43 @@ TouchGFX/target/generated/TouchGFXGeneratedHAL.o: \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/WildcardTextButtonStyle.hpp \
+ ../TouchGFX/gui/include/gui/rtc_screen_screen/RTC_ScreenView.hpp \
+ ../TouchGFX/generated/gui_generated/include/gui_generated/rtc_screen_screen/RTC_ScreenViewBase.hpp \
+ ../TouchGFX/gui/include/gui/rtc_screen_screen/RTC_ScreenPresenter.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/DigitalClock.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/AbstractClock.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
+ ../TouchGFX/gui/include/gui/temperature_screen_screen/Temperature_ScreenView.hpp \
+ ../TouchGFX/generated/gui_generated/include/gui_generated/temperature_screen_screen/Temperature_ScreenViewBase.hpp \
+ ../TouchGFX/gui/include/gui/temperature_screen_screen/Temperature_ScreenPresenter.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRUtil.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/Utils.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Rasterizer.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Outline.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Cell.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/transforms/DisplayTransformation.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphElements.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Canvas.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphLabels.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD16bpp.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/LCD16DebugPrinter.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterColor.hpp \
+ ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp \
+ ../TouchGFX/gui/include/gui/pressure_screen_screen/Pressure_ScreenView.hpp \
+ ../TouchGFX/generated/gui_generated/include/gui_generated/pressure_screen_screen/Pressure_ScreenViewBase.hpp \
+ ../TouchGFX/gui/include/gui/pressure_screen_screen/Pressure_ScreenPresenter.hpp \
+ ../TouchGFX/gui/include/gui/co_screen_screen/CO_ScreenView.hpp \
+ ../TouchGFX/generated/gui_generated/include/gui_generated/co_screen_screen/CO_ScreenViewBase.hpp \
+ ../TouchGFX/gui/include/gui/co_screen_screen/CO_ScreenPresenter.hpp \
+ ../TouchGFX/target/TouchGFXDataReader.hpp \
+ ../TouchGFX/target/generated/TouchGFXGeneratedDataReader.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/PaintImpl.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Paint.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/PaintRGB565Impl.hpp \
@@ -131,6 +172,7 @@ TouchGFX/target/generated/TouchGFXGeneratedHAL.o: \
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/TextProvider.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/TextureMapTypes.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/DebugPrinter.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/FlashDataReader.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/OSWrappers.hpp:
 ../TouchGFX/gui/include/gui/common/FrontendHeap.hpp:
 ../TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendHeapBase.hpp:
@@ -144,6 +186,9 @@ TouchGFX/target/generated/TouchGFXGeneratedHAL.o: \
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/Container.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/Callback.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Widget.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/SlideTransition.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/SnapshotWidget.hpp:
 ../TouchGFX/gui/include/gui/common/FrontendApplication.hpp:
 ../TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp:
 ../Middlewares/ST/touchgfx/framework/include/mvp/MVPApplication.hpp:
@@ -179,6 +224,43 @@ TouchGFX/target/generated/TouchGFXGeneratedHAL.o: \
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/TwoWildcardTextButtonStyle.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/buttons/WildcardTextButtonStyle.hpp:
+../TouchGFX/gui/include/gui/rtc_screen_screen/RTC_ScreenView.hpp:
+../TouchGFX/generated/gui_generated/include/gui_generated/rtc_screen_screen/RTC_ScreenViewBase.hpp:
+../TouchGFX/gui/include/gui/rtc_screen_screen/RTC_ScreenPresenter.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/DigitalClock.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/containers/clock/AbstractClock.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:
+../TouchGFX/gui/include/gui/temperature_screen_screen/Temperature_ScreenView.hpp:
+../TouchGFX/generated/gui_generated/include/gui_generated/temperature_screen_screen/Temperature_ScreenViewBase.hpp:
+../TouchGFX/gui/include/gui/temperature_screen_screen/Temperature_ScreenPresenter.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphWrapAndClear.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/AbstractDataGraph.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRUtil.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/Utils.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Rasterizer.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Outline.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Cell.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/transforms/DisplayTransformation.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphElements.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Canvas.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/graph/GraphLabels.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565.hpp:
+../Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD16bpp.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/LCD16DebugPrinter.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterColor.hpp:
+../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp:
+../TouchGFX/gui/include/gui/pressure_screen_screen/Pressure_ScreenView.hpp:
+../TouchGFX/generated/gui_generated/include/gui_generated/pressure_screen_screen/Pressure_ScreenViewBase.hpp:
+../TouchGFX/gui/include/gui/pressure_screen_screen/Pressure_ScreenPresenter.hpp:
+../TouchGFX/gui/include/gui/co_screen_screen/CO_ScreenView.hpp:
+../TouchGFX/generated/gui_generated/include/gui_generated/co_screen_screen/CO_ScreenViewBase.hpp:
+../TouchGFX/gui/include/gui/co_screen_screen/CO_ScreenPresenter.hpp:
+../TouchGFX/target/TouchGFXDataReader.hpp:
+../TouchGFX/target/generated/TouchGFXGeneratedDataReader.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/PaintImpl.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Paint.hpp:
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/PaintRGB565Impl.hpp:

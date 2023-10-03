@@ -9,11 +9,21 @@
 #include <mvp/MVPHeap.hpp>
 
 #include <touchgfx/transitions/NoTransition.hpp>
+#include <touchgfx/transitions/SlideTransition.hpp>
+
 #include <gui/common/FrontendApplication.hpp>
 #include <gui/model/Model.hpp>
 
 #include <gui/main_screen/MainView.hpp>
 #include <gui/main_screen/MainPresenter.hpp>
+#include <gui/rtc_screen_screen/RTC_ScreenView.hpp>
+#include <gui/rtc_screen_screen/RTC_ScreenPresenter.hpp>
+#include <gui/temperature_screen_screen/Temperature_ScreenView.hpp>
+#include <gui/temperature_screen_screen/Temperature_ScreenPresenter.hpp>
+#include <gui/pressure_screen_screen/Pressure_ScreenView.hpp>
+#include <gui/pressure_screen_screen/Pressure_ScreenPresenter.hpp>
+#include <gui/co_screen_screen/CO_ScreenView.hpp>
+#include <gui/co_screen_screen/CO_ScreenPresenter.hpp>
 
 
 /**
@@ -37,7 +47,11 @@ public:
      * @note All view types used in the application MUST be added to this list!
      */
     typedef touchgfx::meta::TypeList< MainView,
-            touchgfx::meta::Nil
+            touchgfx::meta::TypeList< RTC_ScreenView,
+            touchgfx::meta::TypeList< Temperature_ScreenView,
+            touchgfx::meta::TypeList< Pressure_ScreenView,
+            touchgfx::meta::TypeList< CO_ScreenView,
+            touchgfx::meta::Nil > > > >
             > GeneratedViewTypes;
 
     /**
@@ -50,7 +64,11 @@ public:
      * @note All presenter types used in the application MUST be added to this list!
      */
     typedef touchgfx::meta::TypeList< MainPresenter,
-            touchgfx::meta::Nil
+            touchgfx::meta::TypeList< RTC_ScreenPresenter,
+            touchgfx::meta::TypeList< Temperature_ScreenPresenter,
+            touchgfx::meta::TypeList< Pressure_ScreenPresenter,
+            touchgfx::meta::TypeList< CO_ScreenPresenter,
+            touchgfx::meta::Nil > > > >
             > GeneratedPresenterTypes;
 
     /**
@@ -63,7 +81,9 @@ public:
      * @note All transition types used in the application MUST be added to this list!
      */
     typedef touchgfx::meta::TypeList< touchgfx::NoTransition,
-            touchgfx::meta::Nil
+            touchgfx::meta::TypeList< SlideTransition<EAST>,
+            touchgfx::meta::TypeList< SlideTransition<WEST>,
+            touchgfx::meta::Nil > >
             > GeneratedTransitionTypes;
 
     /**

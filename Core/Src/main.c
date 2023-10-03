@@ -108,6 +108,9 @@ int main(void)
   MX_TIM3_Init();
   MX_TouchGFX_Init();
   /* USER CODE BEGIN 2 */
+  Displ_Init(Displ_Orientat_0);			// initialize display controller - set orientation parameter as per TouchGFX setup
+  Displ_BackLight('I');  					// initialize backlight
+  HAL_TIM_Base_Start_IT(&TGFX_T);			// start TouchGFX tick timer
 
   /* USER CODE END 2 */
 

@@ -10,6 +10,7 @@
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/ScalableImage.hpp>
 #include <touchgfx/containers/buttons/Buttons.hpp>
+#include <touchgfx/widgets/TextArea.hpp>
 
 class MainViewBase : public touchgfx::View<MainPresenter>
 {
@@ -28,13 +29,28 @@ protected:
      */
     touchgfx::Box __background;
     touchgfx::ScalableImage background;
-    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  flexButton1;
-    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  flexButton2;
-    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  flexButton3;
-    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  flexButton4;
-    touchgfx::ScalableImage scalableImage1;
+    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  RTC_button;
+    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  CO_button;
+    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  Temperature_button;
+    touchgfx::BoxWithBorderButtonStyle< touchgfx::ClickButtonTrigger >  Pressure_button;
+    touchgfx::ScalableImage HCMUT_logo;
+    touchgfx::TextArea RTC_text;
+    touchgfx::TextArea Car_systems_text;
+    touchgfx::TextArea CO_text;
+    touchgfx::TextArea Temperature_text;
+    touchgfx::TextArea Pressure_text;
 
 private:
+
+    /*
+     * Callback Declarations
+     */
+    touchgfx::Callback<MainViewBase, const touchgfx::AbstractButtonContainer&> flexButtonCallback;
+
+    /*
+     * Callback Handler Declarations
+     */
+    void flexButtonCallbackHandler(const touchgfx::AbstractButtonContainer& src);
 
 };
 

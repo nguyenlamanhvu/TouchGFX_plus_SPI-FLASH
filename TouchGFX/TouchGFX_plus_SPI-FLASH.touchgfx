@@ -14,7 +14,7 @@
           },
           {
             "Type": "FlexButton",
-            "Name": "flexButton1",
+            "Name": "RTC_button",
             "Y": 103,
             "Width": 160,
             "Height": 59,
@@ -50,7 +50,7 @@
           },
           {
             "Type": "FlexButton",
-            "Name": "flexButton2",
+            "Name": "CO_button",
             "X": 160,
             "Y": 181,
             "Width": 160,
@@ -87,7 +87,7 @@
           },
           {
             "Type": "FlexButton",
-            "Name": "flexButton3",
+            "Name": "Temperature_button",
             "X": 160,
             "Y": 103,
             "Width": 160,
@@ -124,7 +124,7 @@
           },
           {
             "Type": "FlexButton",
-            "Name": "flexButton4",
+            "Name": "Pressure_button",
             "Y": 181,
             "Width": 160,
             "Height": 59,
@@ -160,16 +160,704 @@
           },
           {
             "Type": "ScalableImage",
-            "Name": "scalableImage1",
+            "Name": "HCMUT_logo",
             "X": -18,
             "Y": 11,
             "Width": 114,
             "Height": 80,
             "Filename": "HCMUT.png",
             "ScalingAlgorithm": "Bilinear Interpolation"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "RTC_text",
+            "X": 56,
+            "Y": 118,
+            "Width": 48,
+            "Height": 29,
+            "TextId": "__SingleUse_OKXZ",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 18,
+              "Green": 6,
+              "Blue": 6
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Car_systems_text",
+            "X": 90,
+            "Y": 28,
+            "Width": 230,
+            "Height": 39,
+            "TextId": "__SingleUse_Z9NE",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 232,
+              "Green": 209,
+              "Blue": 209
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "CO_text",
+            "X": 177,
+            "Y": 196,
+            "Width": 126,
+            "Height": 29,
+            "TextId": "__SingleUse_5A2F",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Temperature_text",
+            "X": 165,
+            "Y": 118,
+            "Width": 151,
+            "Height": 29,
+            "TextId": "__SingleUse_5XO7",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Pressure_text",
+            "X": 29,
+            "Y": 196,
+            "Width": 103,
+            "Height": 29,
+            "TextId": "__SingleUse_9FPZ",
+            "TextRotation": "0",
+            "AutoSize": true
           }
         ],
-        "Interactions": []
+        "Interactions": [
+          {
+            "InteractionName": "MainToRTC",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "RTC_button"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "RTC_Screen"
+            }
+          },
+          {
+            "InteractionName": "MainToTemperature",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Temperature_button"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Temperature_Screen"
+            }
+          },
+          {
+            "InteractionName": "MainToPressure",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Pressure_button"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Pressure_Screen"
+            }
+          },
+          {
+            "InteractionName": "MainToCO",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "CO_button"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "CO_Screen"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "RTC_Screen",
+        "Components": [
+          {
+            "Type": "ScalableImage",
+            "Name": "background",
+            "Width": 320,
+            "Height": 240,
+            "Filename": "background.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "Clock_Icon",
+            "X": 12,
+            "Y": 12,
+            "Width": 60,
+            "Height": 60,
+            "Filename": "IconDongHo.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "RTC_Screen_Text",
+            "X": 86,
+            "Y": 23,
+            "Width": 184,
+            "Height": 32,
+            "TextId": "__SingleUse_LXH9",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 252,
+              "Green": 252,
+              "Blue": 252
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "DigitalClock",
+            "Name": "RTC_Data",
+            "X": 118,
+            "Y": 101,
+            "Width": 152,
+            "Height": 39,
+            "TextId": "__SingleUse_L956",
+            "DisplaySeconds": true,
+            "DisplayLeadingZeroForHourIndicator": true,
+            "InitialHour": 10,
+            "InitialMinute": 10
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Time_Text",
+            "X": 12,
+            "Y": 101,
+            "Width": 94,
+            "Height": 32,
+            "TextId": "__SingleUse_H8HR",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "RTCtoMain_Button",
+            "X": 178,
+            "Y": 196,
+            "Width": 138,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_36_small_round_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_36_small_round_active.png",
+            "TextId": "__SingleUse_T0EE",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_36\\small_round_active.json"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "RTCtoMain",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "RTCtoMain_Button"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "Main"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Temperature_Screen",
+        "CanvasBufferSize": 4800,
+        "Components": [
+          {
+            "Type": "ScalableImage",
+            "Name": "background",
+            "Width": 320,
+            "Height": 240,
+            "Filename": "background.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "TemperatureToMain_Button",
+            "X": 182,
+            "Y": 204,
+            "Width": 138,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_36_small_round_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_36_small_round_active.png",
+            "TextId": "__SingleUse_9LCS",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_36\\small_round_active.json"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Temperature_Text",
+            "X": 72,
+            "Y": 23,
+            "Width": 204,
+            "Height": 38,
+            "TextId": "__SingleUse_SJMZ",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 252,
+              "Green": 252,
+              "Blue": 252
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "TemperatureIcon",
+            "X": 12,
+            "Y": 12,
+            "Width": 60,
+            "Height": 60,
+            "Filename": "IconTemperature.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "WhiteBackground",
+            "X": 42,
+            "Y": 78,
+            "Width": 234,
+            "Height": 120,
+            "Filename": "white.png",
+            "Alpha": 188,
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "DynamicGraph",
+            "Name": "TemperatureGraph",
+            "X": 42,
+            "Y": 78,
+            "Width": 234,
+            "Height": 120,
+            "DataSeed": -608413761,
+            "NumberOfValues": 100,
+            "MaxY": 120.0,
+            "Precision": "1",
+            "LastIndex": 99,
+            "XAxisScale": 1.0,
+            "InsertRandomValues": true,
+            "LabelSizeTop": 5,
+            "LabelSizeBottom": 11,
+            "LabelSizeLeft": 20,
+            "GraphType": "GraphWrapClear",
+            "GraphDrawers": [
+              {
+                "Type": "LineDrawer",
+                "LineWidth": 2,
+                "FileNameImage": "",
+                "Color": {
+                  "Red": 8,
+                  "Green": 33,
+                  "Blue": 41
+                }
+              }
+            ],
+            "YAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 5,
+                "Green": 9,
+                "Blue": 10
+              },
+              "Interval": 12.0,
+              "LineWidth": 1
+            },
+            "XAxisLabel": {
+              "Type": "GraphLabel",
+              "Interval": 10.0,
+              "DecimalSeparator": "Point",
+              "TextColor": {
+                "Red": 30,
+                "Green": 84,
+                "Blue": 102
+              },
+              "TextId": "__SingleUse_JXCB",
+              "TextRotation": "0",
+              "Position": "Bottom"
+            },
+            "YAxisLabel": {
+              "Type": "GraphLabel",
+              "Interval": 12.0,
+              "DecimalSeparator": "Point",
+              "TextColor": {
+                "Red": 30,
+                "Green": 84,
+                "Blue": 102
+              },
+              "TextId": "__SingleUse_M75E",
+              "TextRotation": "0",
+              "Position": "Left"
+            }
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "TemperatureToMain",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "TemperatureToMain_Button"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "Main"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Pressure_Screen",
+        "CanvasBufferSize": 4800,
+        "Components": [
+          {
+            "Type": "ScalableImage",
+            "Name": "background",
+            "Width": 320,
+            "Height": 240,
+            "Filename": "background.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "WhiteBackground",
+            "X": 35,
+            "Y": 78,
+            "Width": 248,
+            "Height": 120,
+            "Filename": "white.png",
+            "Alpha": 188,
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "PressureIcon",
+            "X": 12,
+            "Y": 12,
+            "Width": 60,
+            "Height": 60,
+            "Filename": "IconPressure.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "Pressure_Text",
+            "X": 83,
+            "Y": 23,
+            "Width": 139,
+            "Height": 38,
+            "TextId": "__SingleUse_Q5WP",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 252,
+              "Green": 252,
+              "Blue": 252
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "PressureToMain_Button",
+            "X": 182,
+            "Y": 204,
+            "Width": 138,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_36_small_round_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_36_small_round_active.png",
+            "TextId": "__SingleUse_Q180",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_36\\small_round_active.json"
+          },
+          {
+            "Type": "DynamicGraph",
+            "Name": "PressureGraph",
+            "X": 35,
+            "Y": 78,
+            "Width": 248,
+            "Height": 120,
+            "DataSeed": -608413761,
+            "NumberOfValues": 100,
+            "MaxY": 1100.0,
+            "MinY": 300.0,
+            "Precision": "1",
+            "LastIndex": 99,
+            "XAxisScale": 1.0,
+            "InsertRandomValues": true,
+            "LabelSizeTop": 5,
+            "LabelSizeBottom": 11,
+            "LabelSizeLeft": 28,
+            "GraphType": "GraphWrapClear",
+            "GraphDrawers": [
+              {
+                "Type": "LineDrawer",
+                "LineWidth": 2,
+                "FileNameImage": "",
+                "Color": {
+                  "Red": 8,
+                  "Green": 33,
+                  "Blue": 41
+                }
+              }
+            ],
+            "YAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 5,
+                "Green": 9,
+                "Blue": 10
+              },
+              "Interval": 100.0,
+              "LineWidth": 1
+            },
+            "XAxisLabel": {
+              "Type": "GraphLabel",
+              "Interval": 10.0,
+              "DecimalSeparator": "Point",
+              "TextColor": {
+                "Red": 30,
+                "Green": 84,
+                "Blue": 102
+              },
+              "TextId": "__SingleUse_PQAP",
+              "TextRotation": "0",
+              "Position": "Bottom"
+            },
+            "YAxisLabel": {
+              "Type": "GraphLabel",
+              "Interval": 100.0,
+              "DecimalSeparator": "Point",
+              "TextColor": {
+                "Red": 30,
+                "Green": 84,
+                "Blue": 102
+              },
+              "TextId": "__SingleUse_Y02B",
+              "TextRotation": "0",
+              "Position": "Left"
+            }
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "PressureToMain",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "PressureToMain_Button"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "Main"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "CO_Screen",
+        "CanvasBufferSize": 4800,
+        "Components": [
+          {
+            "Type": "ScalableImage",
+            "Name": "background",
+            "Width": 320,
+            "Height": 240,
+            "Filename": "background.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "WhiteBackground",
+            "X": 33,
+            "Y": 78,
+            "Width": 253,
+            "Height": 120,
+            "Filename": "white.png",
+            "Alpha": 188,
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "COToMain_Button",
+            "X": 182,
+            "Y": 204,
+            "Width": 138,
+            "Height": 36,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_36_small_round_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_36_small_round_active.png",
+            "TextId": "__SingleUse_R7OK",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_36\\small_round_active.json"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "CO_Text",
+            "X": 83,
+            "Y": 23,
+            "Width": 169,
+            "Height": 38,
+            "TextId": "__SingleUse_L83Z",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 252,
+              "Green": 252,
+              "Blue": 252
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "ScalableImage",
+            "Name": "COIcon",
+            "X": 12,
+            "Y": 12,
+            "Width": 60,
+            "Height": 60,
+            "Filename": "IconCO.png",
+            "ScalingAlgorithm": "Nearest-neighbor"
+          },
+          {
+            "Type": "DynamicGraph",
+            "Name": "COGraph",
+            "X": 33,
+            "Y": 78,
+            "Width": 253,
+            "Height": 120,
+            "DataSeed": -608413761,
+            "NumberOfValues": 100,
+            "MaxY": 1000.0,
+            "Precision": "1",
+            "LastIndex": 99,
+            "XAxisScale": 1.0,
+            "InsertRandomValues": true,
+            "LabelSizeTop": 5,
+            "LabelSizeBottom": 11,
+            "LabelSizeLeft": 27,
+            "GraphType": "GraphWrapClear",
+            "GraphDrawers": [
+              {
+                "Type": "LineDrawer",
+                "LineWidth": 2,
+                "FileNameImage": "",
+                "Color": {
+                  "Red": 8,
+                  "Green": 33,
+                  "Blue": 41
+                }
+              }
+            ],
+            "YAxisGrid": {
+              "Type": "GraphGrid",
+              "Color": {
+                "Red": 5,
+                "Green": 9,
+                "Blue": 10
+              },
+              "Interval": 100.0,
+              "LineWidth": 1
+            },
+            "XAxisLabel": {
+              "Type": "GraphLabel",
+              "Interval": 10.0,
+              "DecimalSeparator": "Point",
+              "TextColor": {
+                "Red": 30,
+                "Green": 84,
+                "Blue": 102
+              },
+              "TextId": "__SingleUse_WMEQ",
+              "TextRotation": "0",
+              "Position": "Bottom"
+            },
+            "YAxisLabel": {
+              "Type": "GraphLabel",
+              "Interval": 100.0,
+              "DecimalSeparator": "Point",
+              "TextColor": {
+                "Red": 30,
+                "Green": 84,
+                "Blue": 102
+              },
+              "TextId": "__SingleUse_X5R4",
+              "TextRotation": "0",
+              "Position": "Left"
+            }
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "COToMain",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "COToMain_Button"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "Main"
+            }
+          }
+        ]
       }
     ],
     "CustomContainerDefinitions": [],
@@ -187,7 +875,7 @@
       16
     ],
     "AvailableLCDs": {
-      "16": "LCD16bpp"
+      "16": "LCD16bppSerialFlash"
     },
     "AvailableSections": [
       "ExtFlashSection",
@@ -201,8 +889,8 @@
     ],
     "PhysicalButtons": [],
     "FrameworkFeatures": {
-      "LCD16bpp": {
-        "Id": "LCD16bpp",
+      "LCD16bppSerialFlash": {
+        "Id": "LCD16bppSerialFlash",
         "IsEnabled": true
       }
     },

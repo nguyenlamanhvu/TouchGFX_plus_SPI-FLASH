@@ -8,19 +8,34 @@ CPP_SRCS += \
 ../TouchGFX/generated/images/src/BitmapDatabase.cpp \
 ../TouchGFX/generated/images/src/SVGDatabase.cpp \
 ../TouchGFX/generated/images/src/image_HCMUT.cpp \
-../TouchGFX/generated/images/src/image_background.cpp 
+../TouchGFX/generated/images/src/image_IconCO.cpp \
+../TouchGFX/generated/images/src/image_IconDongHo.cpp \
+../TouchGFX/generated/images/src/image_IconPressure.cpp \
+../TouchGFX/generated/images/src/image_IconTemperature.cpp \
+../TouchGFX/generated/images/src/image_background.cpp \
+../TouchGFX/generated/images/src/image_white.cpp 
 
 OBJS += \
 ./TouchGFX/generated/images/src/BitmapDatabase.o \
 ./TouchGFX/generated/images/src/SVGDatabase.o \
 ./TouchGFX/generated/images/src/image_HCMUT.o \
-./TouchGFX/generated/images/src/image_background.o 
+./TouchGFX/generated/images/src/image_IconCO.o \
+./TouchGFX/generated/images/src/image_IconDongHo.o \
+./TouchGFX/generated/images/src/image_IconPressure.o \
+./TouchGFX/generated/images/src/image_IconTemperature.o \
+./TouchGFX/generated/images/src/image_background.o \
+./TouchGFX/generated/images/src/image_white.o 
 
 CPP_DEPS += \
 ./TouchGFX/generated/images/src/BitmapDatabase.d \
 ./TouchGFX/generated/images/src/SVGDatabase.d \
 ./TouchGFX/generated/images/src/image_HCMUT.d \
-./TouchGFX/generated/images/src/image_background.d 
+./TouchGFX/generated/images/src/image_IconCO.d \
+./TouchGFX/generated/images/src/image_IconDongHo.d \
+./TouchGFX/generated/images/src/image_IconPressure.d \
+./TouchGFX/generated/images/src/image_IconTemperature.d \
+./TouchGFX/generated/images/src/image_background.d \
+./TouchGFX/generated/images/src/image_white.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -30,7 +45,7 @@ TouchGFX/generated/images/src/%.o TouchGFX/generated/images/src/%.su TouchGFX/ge
 clean: clean-TouchGFX-2f-generated-2f-images-2f-src
 
 clean-TouchGFX-2f-generated-2f-images-2f-src:
-	-$(RM) ./TouchGFX/generated/images/src/BitmapDatabase.cyclo ./TouchGFX/generated/images/src/BitmapDatabase.d ./TouchGFX/generated/images/src/BitmapDatabase.o ./TouchGFX/generated/images/src/BitmapDatabase.su ./TouchGFX/generated/images/src/SVGDatabase.cyclo ./TouchGFX/generated/images/src/SVGDatabase.d ./TouchGFX/generated/images/src/SVGDatabase.o ./TouchGFX/generated/images/src/SVGDatabase.su ./TouchGFX/generated/images/src/image_HCMUT.cyclo ./TouchGFX/generated/images/src/image_HCMUT.d ./TouchGFX/generated/images/src/image_HCMUT.o ./TouchGFX/generated/images/src/image_HCMUT.su ./TouchGFX/generated/images/src/image_background.cyclo ./TouchGFX/generated/images/src/image_background.d ./TouchGFX/generated/images/src/image_background.o ./TouchGFX/generated/images/src/image_background.su
+	-$(RM) ./TouchGFX/generated/images/src/BitmapDatabase.cyclo ./TouchGFX/generated/images/src/BitmapDatabase.d ./TouchGFX/generated/images/src/BitmapDatabase.o ./TouchGFX/generated/images/src/BitmapDatabase.su ./TouchGFX/generated/images/src/SVGDatabase.cyclo ./TouchGFX/generated/images/src/SVGDatabase.d ./TouchGFX/generated/images/src/SVGDatabase.o ./TouchGFX/generated/images/src/SVGDatabase.su ./TouchGFX/generated/images/src/image_HCMUT.cyclo ./TouchGFX/generated/images/src/image_HCMUT.d ./TouchGFX/generated/images/src/image_HCMUT.o ./TouchGFX/generated/images/src/image_HCMUT.su ./TouchGFX/generated/images/src/image_IconCO.cyclo ./TouchGFX/generated/images/src/image_IconCO.d ./TouchGFX/generated/images/src/image_IconCO.o ./TouchGFX/generated/images/src/image_IconCO.su ./TouchGFX/generated/images/src/image_IconDongHo.cyclo ./TouchGFX/generated/images/src/image_IconDongHo.d ./TouchGFX/generated/images/src/image_IconDongHo.o ./TouchGFX/generated/images/src/image_IconDongHo.su ./TouchGFX/generated/images/src/image_IconPressure.cyclo ./TouchGFX/generated/images/src/image_IconPressure.d ./TouchGFX/generated/images/src/image_IconPressure.o ./TouchGFX/generated/images/src/image_IconPressure.su ./TouchGFX/generated/images/src/image_IconTemperature.cyclo ./TouchGFX/generated/images/src/image_IconTemperature.d ./TouchGFX/generated/images/src/image_IconTemperature.o ./TouchGFX/generated/images/src/image_IconTemperature.su ./TouchGFX/generated/images/src/image_background.cyclo ./TouchGFX/generated/images/src/image_background.d ./TouchGFX/generated/images/src/image_background.o ./TouchGFX/generated/images/src/image_background.su ./TouchGFX/generated/images/src/image_white.cyclo ./TouchGFX/generated/images/src/image_white.d ./TouchGFX/generated/images/src/image_white.o ./TouchGFX/generated/images/src/image_white.su
 
 .PHONY: clean-TouchGFX-2f-generated-2f-images-2f-src
 

@@ -6,8 +6,15 @@
 #include <touchgfx/hal/Types.hpp>
 #include <touchgfx/Bitmap.hpp>
 
-const uint16_t BITMAP_BACKGROUND_ID = 0;
-const uint16_t BITMAP_HCMUT_ID = 1;
+const uint16_t BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_36_SMALL_ROUND_ACTIVE_ID = 0;
+const uint16_t BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_36_SMALL_ROUND_PRESSED_ID = 1;
+const uint16_t BITMAP_BACKGROUND_ID = 2;
+const uint16_t BITMAP_HCMUT_ID = 3;
+const uint16_t BITMAP_ICONCO_ID = 4;
+const uint16_t BITMAP_ICONDONGHO_ID = 5;
+const uint16_t BITMAP_ICONPRESSURE_ID = 6;
+const uint16_t BITMAP_ICONTEMPERATURE_ID = 7;
+const uint16_t BITMAP_WHITE_ID = 8;
 
 namespace BitmapDatabase
 {

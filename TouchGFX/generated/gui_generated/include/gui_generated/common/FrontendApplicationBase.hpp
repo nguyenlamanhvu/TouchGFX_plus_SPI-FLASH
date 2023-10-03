@@ -23,6 +23,20 @@ public:
     // Main
     void gotoMainScreenNoTransition();
 
+    void gotoMainScreenSlideTransitionWest();
+
+    // RTC_Screen
+    void gotoRTC_ScreenScreenSlideTransitionEast();
+
+    // Temperature_Screen
+    void gotoTemperature_ScreenScreenSlideTransitionEast();
+
+    // Pressure_Screen
+    void gotoPressure_ScreenScreenSlideTransitionEast();
+
+    // CO_Screen
+    void gotoCO_ScreenScreenSlideTransitionEast();
+
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
     FrontendHeap& frontendHeap;
@@ -30,6 +44,20 @@ protected:
 
     // Main
     void gotoMainScreenNoTransitionImpl();
+
+    void gotoMainScreenSlideTransitionWestImpl();
+
+    // RTC_Screen
+    void gotoRTC_ScreenScreenSlideTransitionEastImpl();
+
+    // Temperature_Screen
+    void gotoTemperature_ScreenScreenSlideTransitionEastImpl();
+
+    // Pressure_Screen
+    void gotoPressure_ScreenScreenSlideTransitionEastImpl();
+
+    // CO_Screen
+    void gotoCO_ScreenScreenSlideTransitionEastImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP

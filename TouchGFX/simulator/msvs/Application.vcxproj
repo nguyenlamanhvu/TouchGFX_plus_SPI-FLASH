@@ -24,6 +24,18 @@
     <ClCompile Include="..\..\generated\gui_generated\src\main_screen\MainViewBase.cpp"/>
     <ClCompile Include="..\..\gui\src\model\Model.cpp"/>
     <ClCompile Include="..\..\generated\simulator\src\video\SoftwareMJPEGDecoder.cpp"/>
+    <ClCompile Include="..\..\gui\src\rtc_screen_screen\RTC_ScreenPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\rtc_screen_screen\RTC_ScreenView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\rtc_screen_screen\RTC_ScreenViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\temperature_screen_screen\Temperature_ScreenPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\temperature_screen_screen\Temperature_ScreenView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\temperature_screen_screen\Temperature_ScreenViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\pressure_screen_screen\Pressure_ScreenPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\pressure_screen_screen\Pressure_ScreenView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\pressure_screen_screen\Pressure_ScreenViewBase.cpp"/>
+    <ClCompile Include="..\..\gui\src\co_screen_screen\CO_ScreenPresenter.cpp"/>
+    <ClCompile Include="..\..\gui\src\co_screen_screen\CO_ScreenView.cpp"/>
+    <ClCompile Include="..\..\generated\gui_generated\src\co_screen_screen\CO_ScreenViewBase.cpp"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="$(ApplicationRoot)\assets\texts\texts.xml"/>
@@ -177,6 +189,18 @@
     <ClInclude Include="..\..\gui\include\gui\model\ModelListener.hpp"/>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\common\SimConstants.hpp"/>
     <ClInclude Include="..\..\generated\simulator\include\simulator\video\SoftwareMJPEGDecoder.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\rtc_screen_screen\RTC_ScreenPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\rtc_screen_screen\RTC_ScreenView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\rtc_screen_screen\RTC_ScreenViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\temperature_screen_screen\Temperature_ScreenPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\temperature_screen_screen\Temperature_ScreenView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\temperature_screen_screen\Temperature_ScreenViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\pressure_screen_screen\Pressure_ScreenPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\pressure_screen_screen\Pressure_ScreenView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\pressure_screen_screen\Pressure_ScreenViewBase.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\co_screen_screen\CO_ScreenPresenter.hpp"/>
+    <ClInclude Include="..\..\gui\include\gui\co_screen_screen\CO_ScreenView.hpp"/>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\co_screen_screen\CO_ScreenViewBase.hpp"/>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="$(ApplicationRoot)\generated\simulator\touchgfx.rc"/>
