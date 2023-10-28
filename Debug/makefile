@@ -109,6 +109,9 @@ default.size.stdout \
 OBJDUMP_LIST += \
 TouchGFX_plus_SPI-FLASH.list \
 
+OBJCOPY_HEX += \
+TouchGFX_plus_SPI-FLASH.hex \
+
 
 # All Target
 all: main-build
@@ -132,12 +135,17 @@ TouchGFX_plus_SPI-FLASH.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TO
 	@echo 'Finished building: $@'
 	@echo ' '
 
+TouchGFX_plus_SPI-FLASH.hex: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objcopy  -O ihex $(EXECUTABLES) "TouchGFX_plus_SPI-FLASH.hex"
+	@echo 'Finished building: $@'
+	@echo ' '
+
 # Other Targets
 clean:
-	-$(RM) TouchGFX_plus_SPI-FLASH.elf TouchGFX_plus_SPI-FLASH.list TouchGFX_plus_SPI-FLASH.map default.size.stdout
+	-$(RM) TouchGFX_plus_SPI-FLASH.elf TouchGFX_plus_SPI-FLASH.hex TouchGFX_plus_SPI-FLASH.list TouchGFX_plus_SPI-FLASH.map default.size.stdout
 	-@echo ' '
 
-secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)
+secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST) $(OBJCOPY_HEX)
 
 fail-specified-linker-script-missing:
 	@echo 'Error: Cannot find the specified linker script. Check the linker settings in the build configuration.'

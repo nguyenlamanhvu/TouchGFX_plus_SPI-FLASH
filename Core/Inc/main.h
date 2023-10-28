@@ -61,6 +61,12 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define WarningLedTemp_Pin GPIO_PIN_13
+#define WarningLedTemp_GPIO_Port GPIOC
+#define WarningLedCO_Pin GPIO_PIN_14
+#define WarningLedCO_GPIO_Port GPIOC
+#define WarningLedPressure_Pin GPIO_PIN_15
+#define WarningLedPressure_GPIO_Port GPIOC
 #define FLASH_CS_Pin GPIO_PIN_4
 #define FLASH_CS_GPIO_Port GPIOA
 #define FLASH_SCK_Pin GPIO_PIN_5
@@ -88,6 +94,8 @@ void Error_Handler(void);
 #define TOUCH_INT_EXTI_IRQn EXTI15_10_IRQn
 #define DISPL_LED_Pin GPIO_PIN_15
 #define DISPL_LED_GPIO_Port GPIOA
+#define Buzzer_Pin GPIO_PIN_9
+#define Buzzer_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 
